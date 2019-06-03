@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap');
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#video {
+	width: 100%;
+	height: 100%;
+}
+
+#info {
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	left: 20px;
+}
+
+#icon {
+	position: fixed;
+	bottom: 15px;
+	transition: filter 0.3s ease-in;
+}
+
+#icon:hover {
+	cursor: pointer;
+}
+
+#right {
+	position: fixed;
+	bottom: 15px;
+	left: 80px;
+	filter: invert(1);
+}
+
+#right:hover {
+	cursor: pointer;
+}
+
+#menu {
+	background-color: white;
+	box-shadow: 0px 0px 10px black;
+	height: 25vh;
+	width: 20vw;
+	padding: 15px;
+}
+
+#menu > div, span, a {
+	font-family: 'Raleway', sans-serif;
+	color: #686868;
+	font-size: 1vw;
+}
+
+#menu > a {
+	padding-left: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+#menu > a:hover {
+	text-decoration: underline;
+}
+
+#menu > a:before {
+	content: '▌';
+	text-decoration: none;
+}
+
+#playing {
+	font-size: 1.1vw;
+}
+
+.invert {
+	filter: invert(1);
+	transition: filter 0.3s ease-in;
+}
+
+.song-info {
+	font-weight: bold;
+	font-size: 1.1vw;
+}
+
+.np {
+	text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

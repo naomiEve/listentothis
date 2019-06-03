@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>? - Listen To This</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/static/style.css" type="text/css">
+		<link rel="shortcut icon" href="/static/favicon.ico">
+		<script src="/static/app.js" defer></script>
+	</head>
+	<body>
+		<div id="video">
+		</div>
+		<div id="info">
+			<img id="icon" src="/static/icon.svg" height="64px" width="64px" onclick="showmenu()">
+			<img id="right" src="/static/right.svg" height="64px" width="35px" onclick="skipSong()">
+			<div id="menu" hidden>
+				<div class="np">Now playing</div>
+				<hr>
+				<span>Song: </span><span id="playing"></span><br>
+				<span>Genre: </span><span id="genre" class="song-info"></span><br>
+				<span>Year: </span><span id="year" class="song-info"></span>
+				<hr>
+				<a href="#" id="yt-link" target="_blank">Youtube</a>
+				<a href="#" id="reddit-link" target="_blank">Reddit thread</a>
+			</div>
+		</div>
+	</body>
+</html>
